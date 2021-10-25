@@ -1,0 +1,64 @@
+// GLOBAL COLORS
+
+$color-white: #FFFFFF;
+$color-grey-light: #E5E5E5;
+$color-lilac: #DBD0CC;
+$color-beige: #EAE9E7;
+$color-dark-blue: #323334;
+$color-dark-gray: #222222;
+$color-black: #000000;
+$color-brown-warm: #A86A3D;
+$color-brown-cool: #7B5136;
+
+// PRIMARY COLORS
+
+$bg-primary-color: $color-grey-light;
+$text-primary-color: $color-dark-blue;
+
+// ADDITIONAL COLORS
+
+$bg-secondary-color: $color-lilac;
+$bg-third-color: $color-dark-blue;
+$text-secondary-color: $color-black;
+$text-third-color: $color-white;
+
+// GLOBAL FONTS
+
+// Font-sizes
+$font-size-xxs: 0.75rem; // 12px
+$font-size-xs: 0.88rem; // 14px
+$font-size-s: 1rem; // 16px
+$font-size-m: 1.1rem; // 18px
+$font-size-l: 1.38rem; // 22px
+$font-size-xl: 1.5rem; // 24px
+$font-size-xxl: 1.75rem; // 28px
+$font-size-xxxl: 2.1rem; // 34px
+$font-size-xxxxl: 3rem; // 48px
+
+// Font-weights
+$normal-font-weight: 300;
+$medium-font-weight: 400;
+$bold-font-weight: 700;
+
+// PRIMARY FONTS
+
+$base-font-size: $font-size-s;
+$base-font-weight: $bold-font-weight;
+
+// SPECIAL FONTS, SIZES AND COLORS
+
+// Footer
+$footer-bg-primary-color: $color-dark-blue;
+$footer-bg-secondary-color: $color-dark-gray;
+$footer-base-text-color: $color-white;
+$footer-base-font-size: $font-size-xs;
+$footer-base-font-weight: $normal-font-weight;
+
+// Headings
+$headings-primary-color: $color-brown-warm;
+$headings-secondary-color: $color-brown-cool;
+
+// Button
+$button-background-color: $color-dark-blue;
+$button-text-primary-color: $text-primary-color;
+$button-text-secondary-color: $text-third-color;
