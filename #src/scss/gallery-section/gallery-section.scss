@@ -1,0 +1,173 @@
+.gallery-section {
+  margin-bottom: 6.5rem;
+}
+
+.w-2 {
+  grid-column: span 2;
+}
+
+.cards {
+  margin: 0 auto;
+  max-width: 1295px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+  row-gap: 55px;
+
+  .card {
+    cursor: pointer;
+  }
+}
+
+// Horizontal card
+.card-horizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 636px;
+  height: 368px;
+  border: none;
+
+  &__image {
+    width: 40%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 60%;
+
+    .good__name {
+      margin-bottom: 2.5rem;
+      color: $text-primary-color;
+      font-size: $font-size-xxl;
+      font-weight: $base-font-weight;
+      text-transform: uppercase;
+    }
+
+    .good__button {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &:first-of-type {
+    background-color: $color-light-blue;
+  }
+
+  &:nth-of-type(2) {
+    background-color: $color-beige;
+  }
+}
+
+// Vertical card
+.card-vertical {
+  width: 306px;
+  height: 566px;
+
+  &__image {
+    margin-bottom: 2rem;
+    width: 306px;
+    height: 422px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: $text-primary-color;
+    font-weight: $base-font-weight;
+
+    .good__name {
+      margin-bottom: 0.8rem;
+      text-transform: capitalize;
+      font-size: $font-size-m;
+    }
+
+    .good__rating {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-bottom: 1.2rem;
+
+      img {
+        margin-right: 0.24rem;
+      }
+    }
+
+    .good__price {
+      font-size: $font-size-xl;
+    }
+  }
+}
+
+// Site-section vertical card
+.site-section-card {
+  position: relative;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    z-index: 5;
+
+    .section__heading {
+      margin-bottom: 1.88rem;
+      text-transform: uppercase;
+    }
+
+    .section__button {
+      border: 1px solid $button-secondary-color;
+      color: $button-secondary-color;
+    }
+  }
+
+  &__image {
+    width: 306px;
+    height: 566px;
+    background-color: $color-beige;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 2;
+  }
+}
+
+.section__description {
+  margin-bottom: 1.88rem;
+}
