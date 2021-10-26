@@ -1,5 +1,22 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+}
+
+a {
+  text-decoration: none;
+  color: $header-text-primary-color;
+}
+
+button {
+  width: 124px;
+  height: 48px;
+  border: 1px solid $button-primary-color;
+  box-sizing: border-box;
+  background: transparent;
+  color: $button-primary-color;
+  font-size: $font-size-xs;
+  font-weight: $base-font-weight;
+  text-transform: uppercase;
 }

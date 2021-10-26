@@ -1,0 +1,52 @@
+.site-navbar__wrapper {
+  padding: 2rem 4.5rem 0 4.5rem;
+  margin-bottom: 1.56rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.site-navbar-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+
+  .site-logo {
+    font-size: $font-size-xxl;
+    font-weight: $base-font-weight;
+  }
+
+  .navbar-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 224px;
+  }
+}
+
+.site-navbar {
+  padding: 2.38rem;
+  border-top: 1px solid $color-dark-blue;
+  border-bottom: 1px solid $color-dark-blue;
+}
+
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+  .navbar-item {
+    margin-right: 4.3rem;
+    font-size: $font-size-s;
+    font-weight: $header-font-weight;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+

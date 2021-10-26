@@ -47,6 +47,10 @@ $base-font-weight: $bold-font-weight;
 
 // SPECIAL FONTS, SIZES AND COLORS
 
+// Header
+$header-text-primary-color: $color-dark-blue;
+$header-font-weight: $base-font-weight;
+
 // Footer
 $footer-bg-primary-color: $color-dark-blue;
 $footer-bg-secondary-color: $color-dark-gray;
@@ -59,6 +63,5 @@ $headings-primary-color: $color-brown-warm;
 $headings-secondary-color: $color-brown-cool;
 
 // Button
-$button-background-color: $color-dark-blue;
-$button-text-primary-color: $text-primary-color;
-$button-text-secondary-color: $text-third-color;
+$button-primary-color: $color-dark-blue;
+$button-secondary-color: $color-white;
