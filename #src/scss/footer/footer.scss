@@ -76,6 +76,10 @@
   font-weight: $bold-font-weight;
 }
 
+.contacts-block__address {
+  text-transform: capitalize;
+}
+
 .contacts-block__address,
 .contacts-block__phone-number {
   margin-bottom: 0.5rem;
@@ -86,6 +90,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
   width: 285px;
 }
 
@@ -150,4 +155,19 @@
     font-weight: $medium-font-weight;
     opacity: 50%;
   }
+}
+
+.blog-block__heading {
+  margin-bottom: 1.56rem;
+}
+
+.rule {
+  text-align: left;
+  margin: 2rem 0;
+  border: none;
+  height: 1px;
+  width: 296px;
+  background-color: $color-white;
+  color: $color-white;
+  opacity: 50%;
 }
