@@ -88,33 +88,7 @@
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    color: $text-primary-color;
-    font-weight: $base-font-weight;
-
-    .good__name {
-      margin-bottom: 0.8rem;
-      text-transform: capitalize;
-      font-size: $font-size-m;
-    }
-
-    .good__rating {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      margin-bottom: 1.2rem;
-
-      img {
-        margin-right: 0.24rem;
-      }
-    }
-
-    .good__price {
-      font-size: $font-size-xl;
-    }
+    @include card-content;
   }
 }
 

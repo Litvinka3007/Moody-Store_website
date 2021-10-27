@@ -1,0 +1,58 @@
+.top-sales-section {
+  height: 510px;
+  margin-bottom: 5.25rem;
+  padding: 6.8rem 9.2rem 3.9rem 9.2rem;
+  background-image: url("../img/top-sales/bedsheet-set.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top-sale__good {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 545px;
+  height: 338px;
+  padding: 3.75rem 6.4rem 3.75rem 8.1rem;
+  background-color: $color-white;
+  opacity: 90%;
+
+  &-name {
+    margin-bottom: 1.7rem;
+    color: $text-primary-color;
+    font-size: $font-size-xxl;
+    font-weight: $base-font-weight;
+    text-transform: uppercase;
+  }
+
+  &-description {
+    margin-bottom: 1rem;
+    color: $text-primary-color;
+    font-size: $base-font-size;
+    font-weight: $normal-font-weight;
+  }
+}
+
+.top-sale__good-price {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: $color-brown-cool;
+
+  .new-price {
+    margin-right: 1.6rem;
+    font-size: $font-size-xxl;
+    font-weight: $base-font-weight;
+  }
+
+  .old-price {
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    text-decoration: line-through;
+  }
+}

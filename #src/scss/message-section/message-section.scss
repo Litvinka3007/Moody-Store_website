@@ -1,0 +1,64 @@
+.message-section__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 6.9rem;
+  padding: 0 4.2rem 0 4.9rem;
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    color: $text-primary-color;
+
+    .message-section__heading {
+      margin-bottom: 0.5rem;
+      font-size: $font-size-xxl;
+      font-weight: $base-font-weight;
+      text-transform: uppercase;
+    }
+
+    .message-section__subheading {
+      font-size: $font-size-m;
+      font-weight: $medium-font-weight;
+    }
+  }
+
+  &-right {
+    width: 50%;
+  }
+}
+
+.message-section__message-field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  border: 1px solid $color-dark-blue;
+
+  .email-field {
+    padding: 1.1rem 1.6rem;
+    width: 515px;
+    height: 50px;
+    background: transparent;
+  }
+
+  .email-btn__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 50px;
+    background-color: $button-primary-color;
+  }
+}
+
+input[type="email"]::placeholder {
+  color: $text-primary-color;
+  font-size: $base-font-size;
+  font-weight: $medium-font-weight;
+  opacity: 50%;
+}
