@@ -1,0 +1,48 @@
+// Form
+.authorization-form {
+  background-color: rgba(0,0,0,.7);
+
+  h1 {
+    margin: 1.9rem 6rem;
+    padding: 0;
+    text-align: center;
+    color: $color-black;
+    font-size: $font-size-xxl;
+    text-transform: uppercase;
+  }
+
+  .input-form {
+    margin: 1rem 2.5rem;
+    text-align: center;
+
+    input {
+      box-sizing: border-box;
+      padding: 0.6rem;
+      width: 100%;
+      border: 1px solid $color-black;
+      outline: none;
+      background-color: $color-beige;
+      color: $color-black;
+      font-size: $font-size-m;
+    }
+  }
+}
+
+.input-form input[type="text"]:focus,
+.input-form input[type="password"]:focus {
+  border: 1px solid $color-lilac;
+}
+
+.input-form input[type="submit"] {
+  margin-top: 1.2rem;
+  border: none;
+  background-color: $color-black;
+  color: $color-white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: .3s;
+
+  &:hover {
+    background-color: $color-lilac;
+  }
+}
