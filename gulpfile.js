@@ -2,6 +2,7 @@ let project_folder = "dist";
 let source_folder = "#src";
 
 let fs = require("fs");
+let plumber = require("gulp-plumber");
 
 let path = {
   build: {
@@ -10,6 +11,7 @@ let path = {
     js: project_folder + "/js/",
     img: project_folder + "/img/",
     fonts: project_folder + "/fonts/",
+    json: project_folder + "/json/"
   },
   src: {
     html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
@@ -17,12 +19,14 @@ let path = {
     js: source_folder + "/js/script.js",
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
     fonts: source_folder + "/fonts/*.ttf",
+    json: source_folder + "/json/*.*"
   },
   watch: {
     html: source_folder + "/**/*.html",
     css: source_folder + "/scss/**/*.scss",
     js: source_folder + "/js/**/*.js",
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+    json: source_folder + "/json/*.*"
   },
   clean: "./" + project_folder + "/"
 }
@@ -50,6 +54,12 @@ function browserSync(params) {
     port: 3000,
     notify: false,
   })
+}
+
+function json() {
+  return src(path.src.json)
+      .pipe(plumber())
+      .pipe(dest(path.build.json))
 }
 
 function html() {
@@ -140,17 +150,19 @@ function watchFiles(params) {
   gulp.watch([path.watch.css], css);
   gulp.watch([path.watch.js], js);
   gulp.watch([path.watch.img], images);
+  gulp.watch([path.watch.json], json);
 }
 
 function clean(params) {
   return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images));
+let build = gulp.series(clean, gulp.parallel(html, css, js, json, images));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.images = images;
 exports.js = js;
+exports.json = json;
 exports.css = css;
 exports.html = html;
 exports.build = build;
