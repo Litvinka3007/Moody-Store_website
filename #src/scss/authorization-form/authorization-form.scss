@@ -2,7 +2,7 @@
 .authorization-form {
   background-color: rgba(0,0,0,.7);
 
-  h1 {
+  h2 {
     margin: 1.9rem 6rem;
     padding: 0;
     text-align: center;
@@ -11,7 +11,7 @@
     text-transform: uppercase;
   }
 
-  .input-form {
+  .form-group {
     margin: 1rem 2.5rem;
     text-align: center;
 
@@ -21,20 +21,30 @@
       width: 100%;
       border: 1px solid $color-black;
       outline: none;
-      background-color: $color-beige;
       color: $color-black;
       font-size: $font-size-m;
     }
   }
+
+  .error-field {
+    margin: 0.5rem 2.5rem 0 2.5rem;
+    width: 360px;
+    height: 20px;
+    border: none;
+    background: transparent;
+    color: red;
+    font-size: $font-size-xxs;
+    text-align: center;
+  }
 }
 
-.input-form input[type="text"]:focus,
-.input-form input[type="password"]:focus {
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
   border: 1px solid $color-lilac;
 }
 
-.input-form input[type="submit"] {
-  margin-top: 1.2rem;
+.form-group input[type="submit"] {
+  margin-top: 0;
   border: none;
   background-color: $color-black;
   color: $color-white;
@@ -43,6 +53,6 @@
   transition: .3s;
 
   &:hover {
-    background-color: $color-lilac;
+    cursor: pointer;
   }
 }
