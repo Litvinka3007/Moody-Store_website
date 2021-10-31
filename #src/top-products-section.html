@@ -1,7 +1,7 @@
 <section class="top-products-section">
   <div class="top-products-section__heading">Top rating</div>
   <div id="productsCards" class="top-products-section__cards">
-    <div class="top-products__card" onmouseout="querySelector('img').src='./img/top-products/tray.png'" onmouseover="querySelector('img').src='./img/top-products/cups.png'">
+    <div class="top-products__card" data-pid="1" onmouseout="querySelector('img').src='./img/top-products/tray.png'" onmouseover="querySelector('img').src='./img/top-products/cups.png'">
       <div class="card__image">
         <img src="./img/top-products/tray.png" alt="A tray with foot">
       </div>
@@ -17,7 +17,7 @@
         <span class="good__price">30$</span>
       </div>
     </div>
-    <div class="top-products__card" onmouseout="querySelector('img').src='./img/top-products/seat-cushion.png'" onmouseover="querySelector('img').src='./img/top-products/plate.png'">
+    <div class="top-products__card" data-pid="2" onmouseout="querySelector('img').src='./img/top-products/seat-cushion.png'" onmouseover="querySelector('img').src='./img/top-products/plate.png'">
       <div class="card__image">
         <img src="./img/top-products/seat-cushion.png" alt="A twill seat cushion">
       </div>
@@ -33,7 +33,7 @@
         <span class="good__price">30$</span>
       </div>
     </div>
-    <div class="top-products__card" onmouseout="querySelector('img').src='./img/top-products/glass.png'" onmouseover="querySelector('img').src='./img/top-products/cutlery-bascet.png'">
+    <div class="top-products__card" data-pid="3" onmouseout="querySelector('img').src='./img/top-products/glass.png'" onmouseover="querySelector('img').src='./img/top-products/cutlery-bascet.png'">
       <div class="card__image">
         <img src="./img/top-products/glass.png" alt="A fluted beverage glass">
       </div>
@@ -49,7 +49,7 @@
         <span class="good__price">30$</span>
       </div>
     </div>
-    <div class="top-products__card" onmouseout="querySelector('img').src='./img/top-products/cup.png'" onmouseover="querySelector('img').src='./img/top-products/napkins.png'">
+    <div class="top-products__card" data-pid="4" onmouseout="querySelector('img').src='./img/top-products/cup.png'" onmouseover="querySelector('img').src='./img/top-products/napkins.png'">
       <div class="card__image">
         <img src="./img/top-products/cup.png" alt="A ceramic egg cup">
       </div>
@@ -65,7 +65,7 @@
         <span class="good__price">30$</span>
       </div>
     </div>
-    <div class="top-products__card" onmouseout="querySelector('img').src='./img/top-products/box.png'" onmouseover="querySelector('img').src='./img/top-products/glass.png'">
+    <div class="top-products__card" data-pid="5" onmouseout="querySelector('img').src='./img/top-products/box.png'" onmouseover="querySelector('img').src='./img/top-products/glass.png'">
       <div class="card__image">
         <img src="./img/top-products/box.png" alt="A small bamboo box">
       </div>
@@ -81,7 +81,7 @@
         <span class="good__price">30$</span>
       </div>
     </div>
-    <div class="top-products__card" onmouseout="querySelector('img').src='./img/top-products/cutlery-bascet.png'" onmouseover="querySelector('img').src='./img/top-products/seat-cushion.png'">
+    <div class="top-products__card" data-pid="6" onmouseout="querySelector('img').src='./img/top-products/cutlery-bascet.png'" onmouseover="querySelector('img').src='./img/top-products/seat-cushion.png'">
       <div class="card__image">
         <img src="./img/top-products/cutlery-bascet.png" alt="A metal cutlery basket">
       </div>
@@ -97,7 +97,7 @@
         <span class="good__price">30$</span>
       </div>
     </div>
-    <div class="top-products__card" onmouseout="querySelector('img').src='./img/top-products/cups.png'" onmouseover="querySelector('img').src='./img/top-products/tray.png'">
+    <div class="top-products__card" data-pid="7" onmouseout="querySelector('img').src='./img/top-products/cups.png'" onmouseover="querySelector('img').src='./img/top-products/tray.png'">
       <div class="card__image">
         <img src="./img/top-products/cups.png" alt="4-pack ceramic cups">
       </div>
@@ -113,7 +113,7 @@
         <span class="good__price">30$</span>
       </div>
     </div>
-    <div class="top-products__card" onmouseout="querySelector('img').src='./img/top-products/napkins.png'" onmouseover="querySelector('img').src='./img/top-products/box.png'">
+    <div class="top-products__card" data-pid="8" onmouseout="querySelector('img').src='./img/top-products/napkins.png'" onmouseover="querySelector('img').src='./img/top-products/box.png'">
       <div class="card__image">
         <img src="./img/top-products/napkins.png" alt="2-pack linen napkins">
       </div>
@@ -129,7 +129,7 @@
         <span class="good__price">30$</span>
       </div>
     </div>
-    <div class="top-products__card" onmouseout="querySelector('img').src='./img/top-products/plate.png'" onmouseover="querySelector('img').src='./img/top-products/cup.png'">
+    <div class="top-products__card" data-pid="9" onmouseout="querySelector('img').src='./img/top-products/plate.png'" onmouseover="querySelector('img').src='./img/top-products/cup.png'">
       <div class="card__image">
         <img src="./img/top-products/plate.png" alt="A glazed stoneware plate">
       </div>
@@ -146,5 +146,5 @@
       </div>
     </div>
   </div>
-  <button id="moreButton" class="top-products-section__button" onclick="lazyload.load()">Load more products</button>
+  <button id="moreButton" class="top-products-section__button">Load more products</button>
 </section>

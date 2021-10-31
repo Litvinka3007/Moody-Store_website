@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 10,
+      "image": "plate.png",
+      "hoverImage": "cup.png",
+      "cost": "30",
+      "title": "Glazed stoneware plate"
+    },
+    {
+      "id": 11,
+      "image": "seat-cushion.png",
+      "hoverImage": "plate.png",
+      "cost": "30",
+      "title": "Twill seat cushion"
+    },
+    {
+      "id": 12,
+      "image": "cutlery-bascet.png",
+      "hoverImage": "seat-cushion.png",
+      "cost": "30",
+      "title": "Metal cutlery basket"
+    }
+  ]
+}
