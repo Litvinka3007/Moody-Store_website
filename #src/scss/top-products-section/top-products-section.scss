@@ -5,12 +5,10 @@
   margin-bottom: 5.7rem;
 
   &__heading {
+    @include names-headings;
     align-self: flex-start;
     margin: 0 0 3.1rem 2rem;
-    color: $text-primary-color;
     font-size: $font-size-xxxl;
-    font-weight: $base-font-weight;
-    text-transform: uppercase;
   }
 
   &__button {

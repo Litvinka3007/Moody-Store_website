@@ -14,19 +14,15 @@ a {
   color: $header-text-primary-color;
 }
 
-button {
-  width: 124px;
-  height: 48px;
-  border: 1px solid $button-primary-color;
-  box-sizing: border-box;
-  background: transparent;
-  color: $button-primary-color;
-  font-size: $font-size-xs;
-  font-weight: $base-font-weight;
-  text-transform: uppercase;
-  cursor: pointer;
+.text-lowercase {
+  text-transform: lowercase;
 }
 
+.hidden {
+  display: none;
+}
+
+// Mixins
 @mixin card-content {
   display: flex;
   flex-direction: column;
@@ -57,10 +53,19 @@ button {
   }
 }
 
-.text-lowercase {
-  text-transform: lowercase;
+@mixin names-headings {
+  color: $text-primary-color;
+  font-weight: $base-font-weight;
+  text-transform: uppercase;
 }
 
-.hidden {
-  display: none;
+button {
+  @include names-headings;
+  width: 124px;
+  height: 48px;
+  border: 1px solid $button-primary-color;
+  box-sizing: border-box;
+  background: transparent;
+  font-size: $font-size-xs;
+  cursor: pointer;
 }

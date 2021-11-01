@@ -1,5 +1,6 @@
-window.onload = function () {
+window.onload = function() {
   document.addEventListener('click', documentActions);
+  getProducts(document.querySelector('.top-products-section__button'));
 
   function documentActions(e) {
     const targetElement = e.target;
@@ -22,22 +23,57 @@ async function getProducts(button) {
       let result = await response.json();
       loadProducts(result);
       button.classList.remove('_hold');
-      // button.remove();
     } else {
       alert('Error');
     }
   }
 }
 
+function getLastId() {
+  const elements = document.querySelectorAll(".top-products__card"),
+      length = elements.length - 1,
+      lastElement = elements[length];
+
+  return +lastElement.getAttribute('data-pid') + 1;
+}
+
+function getIndex(data, lastId) {
+  let lastIndex = null;
+  let arrLength = data.products.length - 4;
+  if (lastId > data.products[arrLength].id) {
+    document.getElementById('moreButton').remove();
+    return false;
+  }
+  data.products.forEach((item, index) => {
+    if (item.id === lastId) {
+      lastIndex = index;
+    }
+  })
+
+  return lastIndex;
+}
+
 function loadProducts(data) {
   const productsItems = document.querySelector('.top-products-section__cards');
+  let productsRender;
+  if (document.querySelector('.top-products__card')) {
+    const lastId = getLastId(),
+          index = getIndex(data, lastId);
+          productsRender = data.products.splice(index, 3);
 
-  data.products.forEach(item => {
-    const productId = item.id;
-    const productImage = item.image;
-    const productTitle = item.title;
-    const productPrice = item.cost;
-    const productHoverImage = item.hoverImage;
+    if (index === null) {
+      document.getElementById('moreButton').remove();
+    }
+  } else {
+    productsRender = data.products.splice(0, 9);
+  }
+
+  productsRender.forEach(item => {
+    const productId = item.id,
+          productImage = item.image,
+          productTitle = item.title,
+          productPrice = item.cost,
+          productHoverImage = item.hoverImage;
 
     let productTemplateStart = `<div class="top-products__card" data-pid="${productId}" onmouseout="querySelector('img').src='./img/top-products/${productImage}'" onmouseover="querySelector('img').src='./img/top-products/${productHoverImage}'">`;
     let productTemplateEnd = `</div>`;

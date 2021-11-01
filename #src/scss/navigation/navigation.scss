@@ -26,6 +26,18 @@
   }
 }
 
+.cart-icon {
+  position: relative;
+  z-index: 14;
+}
+
+.items-amount {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  z-index: 15;
+}
+
 .site-navbar {
   padding: 2.38rem;
   border-top: 1px solid $color-dark-blue;
@@ -49,4 +61,3 @@
     }
   }
 }
-

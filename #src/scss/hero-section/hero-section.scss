@@ -66,15 +66,14 @@
   width: 50%;
 
   .hero-slider__subject {
+    @include names-headings;
     font-size: $font-size-l;
-    font-weight: $base-font-weight;
-    color: $text-primary-color;
   }
 
   .hero-slider__heading {
     margin: 1.56rem 0 2.5rem;
     font-size: $font-size-xxxxl;
     font-weight: $base-font-weight;
-    color: $headings-primary-color;
+    color: $color-brown-warm;
   }
 }

@@ -48,11 +48,9 @@
     width: 60%;
 
     .good__name {
+      @include names-headings;
       margin-bottom: 2.5rem;
-      color: $text-primary-color;
       font-size: $font-size-xxl;
-      font-weight: $base-font-weight;
-      text-transform: uppercase;
     }
 
     .good__button {

@@ -20,11 +20,9 @@
   opacity: 90%;
 
   &-name {
+    @include names-headings;
     margin-bottom: 1.7rem;
-    color: $text-primary-color;
     font-size: $font-size-xxl;
-    font-weight: $base-font-weight;
-    text-transform: uppercase;
   }
 
   &-description {
