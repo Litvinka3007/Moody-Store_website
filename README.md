@@ -1,6 +1,8 @@
-# Moody Store - e-commerce website of goods for home.
+# Moody Store
 
-## Steps to run the project locally:
+## An e-commerce website of goods for home
+
+### Steps to run the project locally:
 
 1. Clone the repository to your machine. 
 Under the main menu on the repository page in GitHub, there is a green Code button. 
