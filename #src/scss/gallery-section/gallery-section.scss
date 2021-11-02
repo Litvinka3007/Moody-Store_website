@@ -69,6 +69,7 @@
 
 // Vertical card
 .card-vertical {
+  position: relative;
   width: 306px;
   height: 566px;
 
@@ -87,6 +88,52 @@
 
   &__content {
     @include card-content;
+  }
+
+  &__actions {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    left: 37px;
+    padding: 0.8rem;
+    width: 232px;
+    height: 56px;
+    border: none;
+    border-radius: 30px;
+    background: $button-secondary-color;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover {
+    .card-vertical__actions {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.add-to-cart {
+  padding-right: 1.2rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+
+  .cart-button__image {
+    width: 18px;
+    height: auto;
+  }
+}
+
+.add-to-wishlist {
+  padding-left: 1.2rem;
+
+  .wishlist-button__image {
+    width: 20px;
+    height: auto;
   }
 }
 
