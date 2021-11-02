@@ -146,14 +146,16 @@
 
   .content {
     margin-bottom: 0.56rem;
+    color: $footer-base-text-color;
     font-size: $font-size-s;
     font-weight: $normal-font-weight;
   }
 
   .comments {
+    color: $footer-base-text-color;
+    opacity: 50%;
     font-size: $footer-base-font-size;
     font-weight: $medium-font-weight;
-    opacity: 50%;
   }
 }
 

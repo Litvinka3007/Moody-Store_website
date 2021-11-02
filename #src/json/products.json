@@ -5,14 +5,14 @@
       "image": "tray.png",
       "hoverImage": "cups.png",
       "cost": "30",
-      "title": "Tray with foot"
+      "title": "Tray<br> with foot"
     },
     {
       "id": 2,
       "image": "seat-cushion.png",
       "hoverImage": "plate.png",
       "cost": "30",
-      "title": "Twill seat cushion"
+      "title": "Twill<br> seat cushion"
     },
     {
       "id": 3,
@@ -26,14 +26,14 @@
       "image": "cup.png",
       "hoverImage": "napkins.png",
       "cost": "30",
-      "title": "Ceramic egg cup"
+      "title": "Ceramic<br> egg cup"
     },
     {
       "id": 5,
       "image": "box.png",
       "hoverImage": "glass.png",
       "cost": "30",
-      "title": "Small bamboo box"
+      "title": "Small<br> bamboo box"
     },
     {
       "id": 6,
@@ -75,7 +75,7 @@
       "image": "seat-cushion.png",
       "hoverImage": "plate.png",
       "cost": "30",
-      "title": "Twill seat cushion"
+      "title": "Twill<br> seat cushion"
     },
     {
       "id": 12,
@@ -89,7 +89,7 @@
       "image": "seat-cushion.png",
       "hoverImage": "plate.png",
       "cost": "30",
-      "title": "Twill seat cushion"
+      "title": "Twill<br> seat cushion"
     },
     {
       "id": 14,
@@ -117,7 +117,7 @@
       "image": "seat-cushion.png",
       "hoverImage": "plate.png",
       "cost": "30",
-      "title": "Twill seat cushion"
+      "title": "Twill<br> seat cushion"
     },
     {
       "id": 18,
