@@ -80,13 +80,17 @@ function loadProducts(data) {
 
     let productTemplateImage = `
       <div class="card__image">
-        <img src="./img/top-products/${productImage}" alt="${productTitle}">
+        <a href="#">
+          <img src="./img/top-products/${productImage}" alt="${productTitle}">
+        </a>        
       </div>
     `;
 
     let productTemplateContent = `
       <div class="card__content">
-        <span class="good__name">${productTitle}</span>
+        <h4 class="good__name">
+          <a href="#">${productTitle}</a>
+        </h4>
         <div class="good__rating">
           <img src="./img/icons/star-golden.svg" alt="A golden star">
           <img src="./img/icons/star-golden.svg" alt="A golden star">

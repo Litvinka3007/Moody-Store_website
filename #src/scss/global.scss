@@ -11,7 +11,7 @@ main {
 
 a {
   text-decoration: none;
-  color: $header-text-primary-color;
+  color: $text-primary-color;
 }
 
 .text-lowercase {
@@ -59,13 +59,18 @@ a {
   text-transform: uppercase;
 }
 
-button {
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
   @include names-headings;
   width: 124px;
   height: 48px;
   border: 1px solid $button-primary-color;
   box-sizing: border-box;
   background: transparent;
+  text-align: center;
   font-size: $font-size-xs;
   cursor: pointer;
 }
